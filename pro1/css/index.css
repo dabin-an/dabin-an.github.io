@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+
+section.banner .flex-box{width: auto; padding: 8px 0;}
+
+
+section.event .flex-box{ justify-content: center;}
+section.event .flex-box>div{position: relative; width: 490px; height: 180px; padding: 100px 20px; display:block;}
+                              
+
+section.event p{padding: 100px 0; text-align: right; font-size: 20px; font-weight: lighter;}
+section.event p span{position: relative; font-weight: bold; color: #4C4B4B; 
+                        }
+section.event p span::after{content: ""; background-color: #FFE6E7; position: absolute;
+z-index: -5; bottom: -5px; left: -5%; height: 50%; width: 110%;}
+
+section.event a{position: absolute; background-color: #fff; padding: 5px 20px; display: inline-block;
+border-radius: 30px; bottom: -30px; left: 20px; z-index: 5; margin-left: 35px;}
+section.event a:nth-child(2){margin-left: 45px;}
+section.event a i{margin-left: 10px;}
+
+
+section.yogurt .flex-box{justify-content: center;}
+section.yogurt .flex-box>div{width: 33.33%;   padding: 0 20px;position: relative;  }
+
+section.yogurt p{left:0; position: absolute; text-align: center; top: 52%;width: 100%; color: #4C4B4B; 
+ z-index: 10;}
+section.yogurt .flex-box>div:nth-child(4) p, section.yogurt .flex-box>div:nth-child(5) p{top:50%; transform: translateY(-50%);}
+section.yogurt p span{font-size: 23px; font-weight: bold;  color: #F75E75;    display: block;
+  margin-bottom: 10px;}
+
+
+
+section.yogurt .flex-box >div:nth-child(1){opacity: 0; animation-name: ani1;
+    animation-duration: 0.6s; animation-fill-mode: forwards; animation-delay: 0.1s;}
+section.yogurt .flex-box >div:nth-child(2){opacity: 0; animation-name: ani1;
+    animation-duration: 0.7s; animation-fill-mode: forwards; animation-delay: 0.3s; }
+section.yogurt .flex-box >div:nth-child(3){opacity: 0; animation-name: ani1;
+    animation-duration: 0.8s; animation-fill-mode: forwards; animation-delay: 0.6s;}
+section.yogurt .flex-box >div:nth-child(4){opacity: 0; animation-name: ani1;
+    animation-duration: 0.9s; animation-fill-mode: forwards; animation-delay: 1.0s;}
+section.yogurt .flex-box >div:nth-child(5){opacity: 0; animation-name: ani1;
+    animation-duration: 1s; animation-fill-mode: forwards; animation-delay: 1.4s;}
+
+
+@keyframes ani1{from{opacity: 0;} to{opacity: 1;}}
+
+section.yogurt-mo{display: none;}
+section.greek-mo{display: none;}
+section.ice-mo{display: none;}
+
+
+.title-box{display: flex; align-items: center; padding-top: 100px; margin-bottom: 40px;}
+.best .flex-box{justify-content: center;}
+.title-box img{width: auto;}
+section.best h2{padding-left: 15px; color: #4C4B4B; font-size: 30px;}
+.ice{width: 25%; align-items: center; text-align: center;  flex-direction: column; }
+.ice img{width:220px; margin: auto;}
+.ice p{ margin-bottom: 30px; margin-top: 20px;}
+
+.ice2{width: 25%; align-items: center; text-align: center;  flex-direction: column;}
+.ice2 img{width: 220px; margin: auto;}
+.ice2 p{margin-bottom: 30px; margin-top: 20px;}
+
+section.topping .flex-box {position: relative; text-align: center;}
+section.topping h2{text-align: center; padding-top: 30px; position: absolute;width: 100%; left: 0px; top: 50px;}
+section.topping span{font-weight: bold; font-size: 26px;}
+.container.topping .flex-box div:nth-child(3){position: absolute; bottom: -215px; left:50%; z-index: 10; transform: translateX(-45%);
+width: 70%;}
+
+
+.topping2 p{text-align: center; padding-top: 200px; padding-bottom: 120px; font-size: 18px;}
+.topping2 span{font-weight: bold;}
+
+
+    
+
+
+
+
+
+
+
+/* 스와이퍼  */
+.yogurt-mo{position: relative;}
+section.yogurt-mo p{left:0; position: absolute; text-align: center; top: 52%;width: 100%; color: #4C4B4B; 
+ z-index: 10;}
+section.yogurt-mo p span{font-size: 25px; font-weight: bold;  color: #F75E75; }
+
+
+.greek-mo img{margin-top: 30px;}
+.greek-mo{position: relative;}
+section.greek-mo p{left:0; position: absolute; text-align: center; top: 30%;width: 100%; color: #4C4B4B; 
+ z-index: 10;}
+section.greek-mo p span{font-size: 25px; font-weight: bold;  color: #F75E75;   }
+
+
+.ice-mo{position: relative;}
+section.greek-mo p{left:0; position: absolute; text-align: center; top: 30%;width: 100%; color: #4C4B4B; 
+ z-index: 10;}
+
+
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+/* 스와이퍼 커스텀 */
+
+
+.swiper-button-next, .swiper-button-prev{display: none;}
+.swiper-pagination-bullet{background-color: #F75E75;}
+
+
+
+
+
+/* 미디어 쿼리============= */
+
+
+
+
+/* 태블릿 */
+@media(max-width:991px){
+
+
+section.event .flex-box>div{padding: 50px 20px;}
+
+section.event p{padding: 100px 20px;}
+section.event .flex-box>div{width: 350px; height: 140px;}
+
+section.event a{bottom: -10px; left: 0px; padding: 5px 10px;}
+
+
+section.yogurt .flex-box>div img{height: 250px;}
+section.yogurt p {font-size: 13px; padding-bottom: 10px;}
+section.yogurt p span{font-size: 16px;   display: inline-block;
+  margin-bottom: 0px;}
+
+
+
+section.best .flex-box{padding: 0 20px;}
+
+
+.ice img{width:170px; margin: auto;}
+.ice p{ margin-bottom: 30px; margin-top: 20px;}
+
+.ice2 img{width: 170px; margin: auto;}
+.ice2 p{margin-bottom: 30px; margin-top: 20px;}
+
+}
+
+
+/* 폰 */
+@media(max-width:767px){
+
+section.banner{margin-top: 52px;}
+
+section.event .flex-box>div{width: 350px; height: 140px;}
+section.event p{font-size: 19px;}
+section.event p br{display: none;}
+section.event p span{display: block;}
+
+section.event p span::after{width: 100%; left: 3%;}
+
+
+section.yogurt .flex-box>div{width: 100%;}
+section.yogurt .flex-box>div img{height: 450px;}
+section.yogurt p{font-size: 20px;}
+section.yogurt p span{font-size: 25px;}
+
+section.yogurt{display: none;}
+section.yogurt-mo{display: block;}
+section.yogurt-mo p span{display: block;
+  margin-bottom: 10px}
+
+section.greek-mo{display: block;}
+section.greek-mo p{font-size: 20px;}
+section.greek-mo p span{font-size: 25px; display: block;
+  margin-bottom: 10px}
+
+section.swiper-button-next, .swiper-button-prev{display: none;}
+   
+section.best{display: none;}
+
+
+section.ice-mo{display: block;}
+section.ice-mo .title-box{justify-content: center;}
+section.ice-mo h2{font-size: 23px; padding: 0 10px; color: #4C4B4B;}
+section.ice-mo span{display: block; font-size: 17px;}
+section.ice-mo p{font-size: 14px; padding-bottom: 40px;}
+section.ice-mo{text-align: center;}
+
+
+section.topping h2{font-size: 18px;  top: 10px; padding-top: 1px;}
+section.topping span{font-size: 20px;}
+
+
+
+
+.topping2 p{font-size: 17px;}
+
+
+
+}
+
+/* 작은폰 */
+@media(max-width:420px){
+  section.event a {
+        bottom: 0px;
+    }
+section.event p {font-size: 16px; }
+section.event p span::after{width: 95%; left: 5%; }
+
+section.topping2 p br{display: none;}
+
+section.topping h2{font-size: 20px; }
+
+section.topping{margin-bottom: 30px;}
+
+}

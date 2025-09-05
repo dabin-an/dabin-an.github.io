@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{padding: 0; margin: 0; list-style: none; text-decoration: none;
+        box-sizing: border-box;  }
+        body{ font-family: "Roboto", "Noto Sans KR", sans-serif}
+    .flex-box{display: flex; flex-wrap: wrap;}
+    .container{max-width: 1400px; margin: auto; padding: 0 20px;}
+    img{width: 100%; 
+            /* 인라인스타일의 이미지 하단의 빈공간은 block으로 속성을 변경하면 자동 제거됨 */
+    display: block;}
+    a{color: #4C4B4B;}
+    a:hover{color: #EB6CA0;}
+
+
+header .logo{width: 250px;  margin: auto; margin-top: 20px; margin-bottom: 20px;}
+header nav{margin-top: 40px;}
+header nav ul{text-align: center;}
+header nav ul li{display: inline-block; padding: 0 50px; font-size: 20px; font-weight: bold;}
+header nav ul li a:hover{transition: all 0.4s;}
+
+#bt{display: none; position: fixed; right:20px; top:10px; font-size: 30px;}
+
+
+
+footer{background-color: #F6405E; color: #fff; padding: 20px 0; }
+footer img{width: auto; padding-top: 20px; margin-bottom: 20px; }
+footer .line{border: solid 1px #fff;}
+
+
+footer .cont2>ul>li { margin-top: 30px;}
+footer span{display: inline-block; width: 30px;}
+
+.pop{width: 100px; height: 100px; bottom: 100px; right: 20px; border-radius: 50%; 
+  
+    position: fixed; z-index: 1; cursor: pointer; transition: all 0.5s; opacity: 0;}
+
+
+/* 태블릿 */
+@media(max-width:991px){
+    header nav{margin-top: 20px;}
+header .logo{margin-bottom: 20px; width: 120px;}
+header nav ul li{padding: 0 30px;}
+
+footer{ padding: 20px 0;}
+footer .container img{width: 100px;}
+footer p{font-size: 14px;}
+
+.pop{width: 80px; height: 80px; right: 20px;}
+
+    }
+
+/* 폰 */
+    @media(max-width:767px){
+header .logo{width: 100px;  }
+
+header {position: fixed; width: 100%; left: 0 ; top: 0; z-index: 100; background-color: #fff;} 
+
+
+/* 메뉴 묶음 */
+header nav{display: none;}
+header nav ul {text-align: center;  background-color: #FFE6E7; width: 100%;}
+header nav ul li {display: block; padding: 10px 0; border-bottom: #FBC2CB solid 2px;}
+header nav ul li:nth-child(5){border-bottom: none;}
+
+#bt{ display: block; }
+header .logo{margin: 10px auto;}
+footer .container img{width: auto; margin:auto; padding-bottom: 20px;}
+footer p{font-size: 14px;}
+
+footer span {display: none;}
+footer span.br {display: block;}
+
+.pop{display: none;}
+
+
+    }

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/3/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<script src="https://kit.fontawesome.com/208b48a9e3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/index.css">
+<title>요아정</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.intro{text-align: center; position: fixed; width: 100%; height: 100vh; background-color: rgba(255, 255, 255, 0.8); z-index: 10000;}
+.intro img{ width: auto; margin: auto; margin-top: 50px; border: solid 1px gray;}
+   
+@media (max-width:1200px){
+    
+.intro{display: none;}     }   
+
+
+
+</style>
+</head>
+
+<body>
+<div class="intro">
+    <img src="img/guide.jpg" alt="">
+</div>
+
+
+
+    <main>
+        <!-- 로고 -->
+        <header>
+            <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>
+            <div class="container">
+                <div class="logo"><a href="index.html"></a><img src="img/1/logo.jpg" alt=""></div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">브랜드</a></li>
+                        <li><a href="menu.html">메뉴&매장</a></li>
+                        <li><a href="#">창업</a></li>
+                        <li><a href="membership.html">멤버십</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                    </ul>
+                </nav>
+            </div>
+                <!-- 삼단버튼 -->
+            <div id="bt" onclick="mobt()" >
+    <i class="fa-solid fa-bars" style="color: #eb6ca0;"></i>
+                    </div>
+        </header>
+
+
+<!-- 배너 -->
+<section class="container banner">
+    <div class="flex-box">
+        <div><img src="img/1/1-banner.jpg" alt=""></div>
+    </div>
+</section>
+
+<!-- 이벤트 -->
+<section class="container event">
+    <div class="flex-box">
+        <div>
+            <img src="img/1/1-search.png.png" alt="">
+            <a href="#">검색어를 입력하세요<i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div>
+            <img src="img/1/1-event.png" alt="">
+            <a href="#">앱으로 바로가기</a>
+        </div>
+    </div>
+ 
+    <p>
+        1인 가구도 신선한 과일과 건강한 디저트를 <br>
+언제, 어디서든 쉽게 접할 수 있는<br>
+<span>요거트 아이스크림의 정석 요아정입니다.</span>
+</p>
+</section>
+
+<!-- 소개 -->
+<section class="container yogurt">
+    <div class="flex-box">
+        <div><img src="img/1/1-yo.png.png" alt="">
+        <p><span>SOFT YOGURT ICECREAM</span><br>
+        주문 즉시 만드는 부드러움<br>
+        소프트 요거트 아이스크림!<br>
+        카페에서 즐기는 색다른<br>
+        요거트 아이스크림의 매력
+        </p></div>
+        <div><img src="img/1/1-st.png.png" alt="">
+        <p><span>FRESH FRUITS</span><br>
+        주문이 들어오면<br>
+        바로바로 손질해서 나가는<br>
+        생과일만 사용하는 신선함!
+        </p>
+    </div>
+        <div><img src="img/1/1-cf.png.png" alt="">
+        <p><span>COFFEE & DRINKS</span><br>
+            다양한 디저트들과<br>
+        요아정에서만 즐길 수 있는<br>
+        특별한 음료들
+        </p>
+                </div>
+            
+        
+        <div><img src="img/1/1-ice.png" alt="">
+        <p><span>요아정 <br> 요거트 아이스크림</span><br>
+            다양한 토핑과 생과일들을 활용하여<br>
+            나만의 조합으로 먹을 수 있는 맛있는<br>
+            요거트 아이스크림
+        </p>
+        </div>
+        
+        <div><img src="img/1/1-greek.png" alt="">
+            <p><span>요아정 그릭 요거트</span><br>
+                무항생제 인증 원유와<br>
+                HACCP 인증이 된 곳에서<br> 
+                100% 수제로 만든<br>
+                달지않은 꾸덕한 무가당 그릭요거트<br>
+            </p>
+        </div>
+        
+
+        
+
+        </div>
+</section>
+ <!-- 첫번째 스와이퍼 -->
+<section class="yogurt-mo">
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+            <div ><img src="img/1/1-yo.png.png" alt="">
+            <p><span>SOFT YOGURT ICECREAM</span><br>
+            주문 즉시 만드는 부드러움<br>
+            소프트 요거트 아이스크림!<br>
+            카페에서 즐기는 색다른<br>
+            요거트 아이스크림의 매력
+            </p></div>        
+    </div>
+      <div class="swiper-slide">
+       <div><img src="img/1/1-st.png.png" alt="">
+        <p><span>FRESH FRUITS</span><br>
+        주문이 들어오면<br>
+        바로바로 손질해서 나가는<br>
+        생과일만 사용하는 신선함!
+        </p>
+    </div>
+    </div>
+      <div class="swiper-slide">
+        <div><img src="img/1/1-cf.png.png" alt="">
+        <p><span>COFFEE & DRINKS</span><br>
+            다양한 디저트들과<br>
+        요아정에서만 즐길 수 있는<br>
+        특별한 음료들
+        </p>
+      </div>
+      </div>
+  </div>
+    <div class="swiper-pagination"></div> 
+    </div>
+
+</section>
+
+
+<!--  두번째 스와이퍼 --> 
+<section class="greek-mo">
+<div class="swiper mySwiper_2">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div><img src="img/1/1-ice.png" alt="">
+        <p><span>요아정 <br> 요거트 아이스크림</span><br>
+            다양한 토핑과 생과일들을 활용하여<br>
+            나만의 조합으로 먹을 수 있는 맛있는<br>
+            요거트 아이스크림
+        </p>
+        </div>
+        </div>
+<div class="swiper-slide">
+    <div><img src="img/1/1-greek.png" alt="">
+            <p><span>요아정 그릭 요거트</span><br>
+                무항생제 인증 원유와<br>
+                HACCP 인증이 된 곳에서<br> 
+                100% 수제로 만든<br>
+                달지않은 꾸덕한 무가당 그릭요거트<br>
+            </p>
+        </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div> 
+
+</div>
+</section> 
+
+
+<!-- 세번째 스와이퍼 -->
+<section class="ice-mo container">
+    <div>
+        <div class="title-box">
+            <img src="img/1/logo2.png" alt="">
+            <h2>BEST MENU <span>요거트 아이스크림</span></h2>
+        </div>
+        </div>
+<div class="swiper mySwiper_3">
+    <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div  ><img src="img/1/1-y-1.png" alt="">
+                        <p>그래놀라+벌집꿀</p></div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div  ><img src="img/1/1-y-2.png" alt="">
+                        <p>바나나+초코링+아몬드</p></div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div  ><img src="img/1/1-y-3.png" alt="">
+                        <p>딸기+초코쉘+치즈큐브</p></div>
+                </div>
+                <div class="swiper-slide">
+                    <div  ><img src="img/1/1-y-4.png" alt="">
+                        <p>바나나시리얼 세트</p></div>
+                </div>
+    </div>
+
+    
+
+</div>
+</div>
+</section>
+
+<!-- 네번째 스와이퍼 -->
+<section class="ice-mo container">
+    <div>
+        <div class="title-box">
+            <img src="img/1/logo2.png" alt="">
+            <h2>BEST MENU <span>그릭 요거트</span></h2>
+        </div>
+        </div>
+<div class="swiper mySwiper_3">
+    <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div  ><img src="img/1/1-gr-1.png" alt="">
+                        <p>딸기+그래놀라</p></div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div  ><img src="img/1/1-gr-2.png" alt="">
+                        <p>벌집꿀+그래놀라</p></div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div  ><img src="img/1/1-gr-3.png" alt="">
+                        <p>블루베리+그래놀라</p></div>
+                </div>
+                
+    </div>
+
+    
+
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+<section class="container best">
+    <div>
+        <div class="title-box">
+            <img src="img/1/logo2.png" alt="">
+            <h2>BEST MENU 요거트 아이스크림</h2>
+        </div>
+        </div>
+        <div class="flex-box">
+            <div class="ice"><img src="img/1/1-y-1.png" alt="">
+            <p>그래놀라+벌집꿀</p></div>
+            <div class="ice"><img src="img/1/1-y-2.png" alt="">
+            <p>바나나+초코링+아몬드</p></div>
+            <div class="ice"><img src="img/1/1-y-3.png" alt="">
+            <p>딸기+초코쉘+치즈큐브</p></div>
+            <div class="ice"><img src="img/1/1-y-4.png" alt="">
+            <p>바나나시리얼 세트</p></div>
+        </div>
+
+        <div >
+        <div class="title-box">
+            <img src="img/1/logo2.png" alt="">
+            <h2>BEST MENU 그릭 요거트</h2>
+        </div>
+        </div>
+        <div class="flex-box">
+            <div class="ice2"><img src="img/1/1-gr-1.png" alt="">
+            <p>딸기+그래놀라</p></div>
+            <div class="ice2"><img src="img/1/1-gr-2.png" alt="">
+            <p>그래놀라+벌집꿀</p></div>
+            <div class="ice2"><img src="img/1/1-gr-3.png" alt="">
+            <p>블루베리+그래놀라</p>
+            </div>
+        </div>
+
+</section>
+
+
+<!-- 토핑 -->
+<section class="container topping">
+<div class="flex-box">
+    <h2>각종 토핑으로<br><span>나만의 요아정을 커스텀 해보세요!</span></h2>
+<div><img src="img/1/1-topping background.png" alt=""></div>
+<div><img src="img/1/1-topping.png" alt="">
+
+</div>
+
+
+</section>
+
+<section class="container topping2">
+    <p>10여종의 과일과 30여종의 과자 토핑류, 소스 등<br>
+수 많은 토핑과 생과일들을 활용하여<br><br>
+<span>취향대로 나만의 조합으로 먹을 수 있는</span> 요아정 요거트 아이스크림은<br>
+타사 요거트와 차별을 둘 수 있는 포인트 요소입니다.</p>
+</section>
+
+
+
+
+
+
+<!-- 푸터 -->
+ <footer>
+<div class="container"><img src="img/1/1-footer logo.png" alt=""></div>
+<div class="line container"></div>
+<div class="flex-box container">
+<div class="cont2">
+<ul>
+    <li><p>주식회사 요아정<span></span>대표자 박현희<span></span>사업자번호 696-86-02195
+
+<span class="br"></span>주소 서울특별시 성동구 아차산로17길 48 1703-5호<br>
+제휴문의 yoajung@yoajung.co.kr<span></span>cs문의 cs@yoajung.co.kr<span class="br"></span> 대표전화 1551-8106
+<br><br>Copyright ⓒ 요거트아이스크림의정석. all Rights Reserved.
+    </p></li>
+</ul>
+</div>
+</div>
+
+</footer>
+
+
+
+
+
+
+    </main>
+
+<!-- 창업안내 -->
+<div class="pop" id="top">
+<img src="img/1/1-pop.png" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        clickable: true,
+        el: ".swiper-pagination",
+      },
+      loop: true, /* 무한루프 */
+    });
+
+var swiper_2 = new Swiper(".mySwiper_2", {
+      pagination: {
+        clickable: true,
+        el: ".swiper-pagination",
+      },
+      loop: true, /* 무한루프 */
+    });
+
+
+
+
+
+var swiper_3 = new Swiper(".mySwiper_3", {
+     slidesPerView: 2.5,
+      spaceBetween: 20, 
+  loop: true,
+/*   autoplay: {
+    delay: 1500,             
+    disableOnInteraction: false 
+  }, */
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }
+});
+
+
+
+
+  </script>
+
+
+    <!-- 메뉴 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/common.js"></script>
+
+<script src="js/index.js"></script>
+<script>
+$(function(){
+    $('.intro img').click( function(){
+            $('.intro').hide();
+    });
+    
+    
+});
+
+</script>
+
+</body>
+</html>
