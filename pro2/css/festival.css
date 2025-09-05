@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+section.banner{margin-top: 200px;}
+
+section.poster{margin-top: 100px; margin-bottom: 100px; width: 60%;}
+section.poster ul {text-align: center; }
+section.poster>ul>li{margin-top: 100px; color: #fff; font-size: 25px; font-weight: bold;
+background-color: #02943C; border-radius: 50px; text-align: center;
+padding: 20px 100px; display: inline-block; }
+section.poster p{margin-top: 50px; text-align: center; font-size: 20px; color: #2B3136; }
+section.poster p span{font-weight: bold; color: #269260;}
+section.poster span.thankyou{color: #000; text-align: center ; color: #2B3136; font-weight: normal;}
+
+section.festival{margin-bottom: 100px;}
+section.festival h2{font-size: 30px; color: #269260; margin-bottom: 50px;}
+section.festival img{width: 100%;}
+section.festival p{font-size: 22px; color: #2B3136;}
+section.festival p span{color: #3B8CF9; font-weight: bold;}
+section.festival .flex-box { align-items: center; justify-content:space-evenly;
+    margin-bottom: 50px; }
+section.festival .flex-box>div{width: 50%;}
+section.festival .r-txt{padding-left:30px ;}
+section.festival .l-txt{padding-right:30px ; text-align: right;}
+section.festival .l div:nth-child(1){order: 1;} 
+section.festival .l div:nth-child(2){order: 2;} 
+
+
+
+
+/* 미디어쿼리================ */
+
+/* 태블릿 */
+@media(max-width:991px){
+section.poster{width: 80%;}
+section.poster>ul>li{margin-top: 50px;  font-size: 20px; padding: 15px 80px;}
+section.poster p{margin-top: 25px; font-size: 18px;}
+
+
+section.festival h2{font-size: 30px;}
+section.festival p{font-size: 17px;}
+section.festival br{display: none;}
+section.festival span{display: block;}
+
+}
+
+/* 폰 */
+@media(max-width:767px){
+
+section.banner{margin-top: 90px; }
+section.poster{margin-top: 50px;}
+section.poster>ul>li{margin-top: 25px; font-size: 22px; border-radius: 0; display: block;
+ width: 100vw;   margin-left: calc(-1 * (100vw - 100%) / 2); }
+  section.poster p{ text-align:left; line-height:1.7; font-size:18px; word-break: keep-all; }
+  section.poster p br.no{ display:none; }        
+  section.poster p .thankyou{ display:block; text-align:right; margin-top:4px; }
+
+
+section.festival h2{font-size: 24px; margin-top: -50px; margin-bottom: 20px;}
+section.festival p{margin-top: 20px; font-size: 18px;}
+section.festival .flex-box>div{width: 100%; text-align: justify; padding:0 ;}
+section.festival .l div:nth-child(1){order: 2;} 
+section.festival .l div:nth-child(2){order: 1;} 
+
+
+@media(max-width:420px){
+section.poster>ul>li{font-size: 17px;}
+section.poster p{font-size: 16px;}
+section.festival h2{font-size: 22px;}
+section.festival p{font-size: 16px;}
+
+
+}
+
+}
